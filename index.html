@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-container">
+        <div id="side-image">
+            <div id="banner">
+                <img src="/images/odin.png" alt="Odin Logo" height="100">
+                <p id="banner-text">Odin</p>
+            </div>
+        </div>
+        <div id="form-container">
+            <p id="form-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vitae fugiat quia quam rem corporis placeat. Architecto molestias commodi ullam officiis esse error quam voluptatum. Assumenda dignissimos culpa natus nostrum.</p>
+            <form action="example.com/path" method="post">
+                <fieldset>
+                    <legend>Let's Do This!</legend>
+                    <p>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="user-first-name" id="first-name" required>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="user-last-name" id="last-name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="user-email" id="email" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="user-phone" id="phone">
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" name="user-password" id="password" required>
+                        <label for="password-confirmation">Confirm Password</label>
+                        <input type="password" name="user-password-confirmation" id="password-confirmation" required>
+                    </p>
+                </fieldset>
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Already have an account? <a href="/log-in.html">Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>
