@@ -6,6 +6,16 @@
     margin: 40px auto;
     }
 
+#banner {
+    display: flex;
+    align-items: center;
+    background-color: rgba(220,220,220, .8);
+}
+#banner-text {
+    color: white;
+    font-size: 4rem;
+}
+
 #form-container {
     display: flex;
     flex-direction: column;
@@ -17,6 +27,7 @@
 #side-image {
     background-image: url("../images/cover-image.jpg");
     background-position: center;
+    object-fit: cover;
     flex-basis: 35%;
 }
 
@@ -48,4 +59,8 @@ button {
     -moz-box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
 }
 
+a {
+    color: #596D48;
+    text-decoration: none;
+}
 
