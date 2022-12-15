@@ -26,8 +26,8 @@
 
 #side-image {
     background-image: url("../images/cover-image.jpg");
+    background-size: cover;
     background-position: center;
-    object-fit: cover;
     flex-basis: 35%;
 }
 
@@ -63,4 +63,3 @@ a {
     color: #596D48;
     text-decoration: none;
 }
-
