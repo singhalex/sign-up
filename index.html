@@ -29,16 +29,16 @@
 
                     <div id="input-container">
                         <div id="form-row">
-                            <label for="first-name">First Name*</label>
-                            <input type="text" name="user-first-name" id="first-name" required>
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="user-first-name" id="first-name">
                         </div>
                         <div id="form-row">
                             <label for="last-name">Last Name*</label>
-                            <input type="text" name="user-last-name" id="last-name" required>
+                            <input type="text" name="user-last-name" id="last-name">
                         </div>
                         <div id="form-row">
-                            <label for="email">Email*</label>
-                            <input type="email" name="user-email" id="email" required>
+                            <label for="email">Email</label>
+                            <input type="email" name="user-email" id="email">
                         </div>
                         <div id="form-row">
                             <label for="phone">Phone Number</label>
@@ -46,11 +46,13 @@
                         </div>
                         <div id="form-row">
                             <label for="password">Password*</label>
-                            <input type="password" name="user-password" id="password" required>
+                            <input type="password" name="user-password" id="password" minlength= "6" required>
+                            <span></span>
                         </div>
                         <div id="form-row">
                             <label for="password-confirmation">Confirm Password*</label>
-                            <input type="password" name="user-password-confirmation" id="password-confirmation" required>
+                            <input type="password" name="user-password-confirmation" id="password-confirmation" minlength="6" required>
+                            <span></span>
                         </div>
                     </div>
 

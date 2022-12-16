@@ -12,7 +12,6 @@ body {
     width: clamp(400px, 100%, 2560px);
     height: 100vh;
     display: flex;
-    /* border: 1px solid red; */
     margin: 0px auto;
     }
 
@@ -40,7 +39,6 @@ body {
 legend {
     float: left;
     padding: 0;
-    /* margin-bottom: 1rem; */
 }
 
 #side-image {
@@ -63,7 +61,14 @@ input {
     border: 1px solid #E5E7EB;
     border-radius: 4px;
     padding: .5rem;
+    box-sizing: border-box;
+    appearance: none;
 }
+
+input:invalid {
+    border: 1px solid red;
+}
+
 #form-header {
     padding: 2rem;
     max-width: 60ch;
@@ -82,14 +87,43 @@ fieldset {
 #input-container {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 1.2rem;
+}
+
+span {
+    position: relative;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
+    border: 1px solid lightblue;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.36);
+}
+
+input:invalid + span::before {
+    content: "✖";
+    color: red;
+    position: absolute;
+    bottom: .4rem;
+    left: 220px;
+}
+
+input:valid + span::before {
+    content: "✓";
+    color: green;
+    position: absolute;
+    bottom: .5rem;
+    left: 222px;
 }
 
 #form-row {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    flex-basis: 40%;
+    flex-basis: 45%;
+    position: relative;
 }
 
 button {
