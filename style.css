@@ -1,14 +1,19 @@
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     font-size: 20px;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	line-height: 1;
 }
 
 #page-container {
-    width: clamp(400px, 70%, 1000px);
-    height: 900px;
+    width: clamp(400px, 100%, 2560px);
+    height: 100vh;
     display: flex;
-    border: 1px solid red;
-    margin: 40px auto;
+    /* border: 1px solid red; */
+    margin: 0px auto;
     }
 
 #banner {
@@ -16,12 +21,12 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 14rem;
-    background-color: rgba(10,10,10, .5);
-    z-index: 2;
+    background-color: rgba(10,10,10, .6);
 }
 #banner-text {
     color: white;
     font-size: 4rem;
+    font-family: 'Amatic SC', cursive;
 }
 
 #form-container {
@@ -42,13 +47,21 @@ body {
 p > label {
     border: 1px solid red;
     width: 50%;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .2ch;
+    color: rgb(51, 51, 51);
 }
 
 input {
     width: 180px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    height: 1.4rem;
 }
 #form-header {
     padding: 2rem;
+    max-width: 60ch;
 }
 
 fieldset {
@@ -57,7 +70,7 @@ fieldset {
     -moz-box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
     background-color: white;
     border: none;
-
+    margin: 0;
 }
 
 button {
@@ -66,6 +79,8 @@ button {
     background-color: #596D48;
     border-radius: .75rem;
     border: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1rem;
     color: white;
     box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
     -webkit-box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
@@ -75,4 +90,14 @@ button {
 a {
     color: #596D48;
     text-decoration: none;
+    font-weight: bold;
+}
+
+#login {
+    margin-left: 2rem;
+    font-size: .9rem;
+}
+
+ol, ul {
+	list-style: none;
 }
