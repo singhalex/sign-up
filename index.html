@@ -26,24 +26,34 @@
                 <fieldset>
                     <legend>Let's Do This!</legend>
                     <p><br></p>
-                    <p>
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="user-first-name" id="first-name" required>
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="user-last-name" id="last-name" required>
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" name="user-email" id="email" required>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="user-phone" id="phone">
-                    </p>
-                    <p>
-                        <label for="password">Password</label>
-                        <input type="password" name="user-password" id="password" required>
-                        <label for="password-confirmation">Confirm Password</label>
-                        <input type="password" name="user-password-confirmation" id="password-confirmation" required>
-                    </p>
+
+                    <div id="input-container">
+                        <div id="form-row">
+                            <label for="first-name">First Name*</label>
+                            <input type="text" name="user-first-name" id="first-name" required>
+                        </div>
+                        <div id="form-row">
+                            <label for="last-name">Last Name*</label>
+                            <input type="text" name="user-last-name" id="last-name" required>
+                        </div>
+                        <div id="form-row">
+                            <label for="email">Email*</label>
+                            <input type="email" name="user-email" id="email" required>
+                        </div>
+                        <div id="form-row">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="user-phone" id="phone">
+                        </div>
+                        <div id="form-row">
+                            <label for="password">Password*</label>
+                            <input type="password" name="user-password" id="password" required>
+                        </div>
+                        <div id="form-row">
+                            <label for="password-confirmation">Confirm Password*</label>
+                            <input type="password" name="user-password-confirmation" id="password-confirmation" required>
+                        </div>
+                    </div>
+
                 </fieldset>
                 <button type="submit">Create Account</button>
             </form>

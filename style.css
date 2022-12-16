@@ -50,20 +50,19 @@ legend {
     flex-basis: 35%;
 }
 
-p > label {
-    border: 1px solid red;
-    width: 50%;
+label {
     font-size: .7rem;
     text-transform: uppercase;
     letter-spacing: .2ch;
-    color: rgb(51, 51, 51);
+    color: rgb(50, 50, 50);
+    margin-bottom: .25rem;
 }
 
 input {
-    width: 180px;
+    width: 200px;
     border: 1px solid #E5E7EB;
     border-radius: 4px;
-    height: 1.5rem;
+    padding: .5rem;
 }
 #form-header {
     padding: 2rem;
@@ -78,6 +77,19 @@ fieldset {
     border: none;
     margin: 0;
     padding: 2rem;
+}
+
+#input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+#form-row {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
 }
 
 button {
