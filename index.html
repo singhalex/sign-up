@@ -7,6 +7,7 @@
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet"></head>
+    <script src="./script.js" defer></script>
 <body>
     <div id="page-container">
         <div id="side-image">
@@ -30,34 +31,34 @@
                     <div id="input-container">
                         <div id="form-row">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="user-first-name" id="first-name">
+                            <input type="text" name="user-first-name" id="first-name" required>
                         </div>
                         <div id="form-row">
-                            <label for="last-name">Last Name*</label>
-                            <input type="text" name="user-last-name" id="last-name">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="user-last-name" id="last-name" required>
                         </div>
                         <div id="form-row">
-                            <label for="email">Email</label>
+                            <label for="email" required>Email</label>
                             <input type="email" name="user-email" id="email">
                         </div>
                         <div id="form-row">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" name="user-phone" id="phone">
+                            <input type="tel" name="user-phone" id="phone" placeholder="(555) 555-5555">
                         </div>
                         <div id="form-row">
                             <label for="password">Password*</label>
-                            <input type="password" name="user-password" id="password" minlength= "6" required>
-                            <span></span>
+                            <input type="password" name="user-password" id="password" minlength= "6" placeholder="6 character mininum" required>
+                            <span id="error-span"></span>
                         </div>
                         <div id="form-row">
                             <label for="password-confirmation">Confirm Password*</label>
-                            <input type="password" name="user-password-confirmation" id="password-confirmation" minlength="6" required>
+                            <input type="password" name="user-password-confirmation" id="password-confirmation" minlength="6" placeholder="Passwords must match" required>
                             <span></span>
                         </div>
                     </div>
 
                 </fieldset>
-                <button type="submit">Create Account</button>
+                <button id="submit-button" type="submit" disabled>Create Account</button>
             </form>
             <p id="login">Already have an account? <a href="/log-in.html">Log In</a></p>
         </div>
