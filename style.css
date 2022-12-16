@@ -13,6 +13,7 @@ body {
     height: 100vh;
     display: flex;
     margin: 0px auto;
+    flex-wrap: wrap;
     }
 
 #banner {
@@ -28,6 +29,13 @@ body {
     font-family: 'Amatic SC', cursive;
 }
 
+#side-image {
+    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
+    background-size: cover;
+    background-position: center;
+    flex-basis: 35%;
+}
+
 #form-container {
     display: flex;
     flex-direction: column;
@@ -36,16 +44,24 @@ body {
     justify-content: center;
 }
 
+#form-header {
+    padding: 2rem;
+    max-width: 60ch;
+}
+
+fieldset {
+    box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
+    -webkit-box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
+    -moz-box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 2rem;
+}
+
 legend {
     float: left;
     padding: 0;
-}
-
-#side-image {
-    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
-    background-size: cover;
-    background-position: center;
-    flex-basis: 35%;
 }
 
 label {
@@ -65,29 +81,22 @@ input {
     appearance: none;
 }
 
-input:invalid {
+input[type="password"]:invalid {
     border: 1px solid red;
-}
-
-#form-header {
-    padding: 2rem;
-    max-width: 60ch;
-}
-
-fieldset {
-    box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
-    -webkit-box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
-    -moz-box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
-    background-color: white;
-    border: none;
-    margin: 0;
-    padding: 2rem;
 }
 
 #input-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
+}
+
+#form-row {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    position: relative;
 }
 
 span {
@@ -118,15 +127,17 @@ input:valid + span::before {
     left: 222px;
 }
 
-#form-row {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 45%;
-    position: relative;
+.error::after {
+    content: "Passwords do not match.";
+    color: red;
+    font-size: .75rem;
+    position: absolute;
+    top: .25rem;
+    left: .25rem;
 }
 
-button {
+
+#submit-button {
     margin: 2rem;
     padding: 1rem 3rem;
     background-color: #596D48;
@@ -140,6 +151,12 @@ button {
     -moz-box-shadow: -1px 10px 12px -4px rgba(0,0,0,0.36);
 }
 
+#submit-button:disabled {
+    color: rgb(68, 68, 68);
+    background-color: gray;
+    box-shadow: none;
+}
+
 a {
     color: #596D48;
     text-decoration: none;
@@ -149,8 +166,4 @@ a {
 #login {
     margin-left: 2rem;
     font-size: .9rem;
-}
-
-ol, ul {
-	list-style: none;
 }
