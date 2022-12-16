@@ -32,9 +32,15 @@ body {
 #form-container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(252, 252, 252);
+    background-color: #F9FAFB;
     flex-basis: 65%;
     justify-content: center;
+}
+
+legend {
+    float: left;
+    padding: 0;
+    /* margin-bottom: 1rem; */
 }
 
 #side-image {
@@ -57,7 +63,7 @@ input {
     width: 180px;
     border: 1px solid #E5E7EB;
     border-radius: 4px;
-    height: 1.4rem;
+    height: 1.5rem;
 }
 #form-header {
     padding: 2rem;
@@ -71,6 +77,7 @@ fieldset {
     background-color: white;
     border: none;
     margin: 0;
+    padding: 2rem;
 }
 
 button {
